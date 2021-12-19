@@ -10,7 +10,6 @@ def products(request):
         {'href': 'products_modern', 'name': 'модерн'},
         {'href': 'products_classic', 'name': 'классика'},
     ]
-
     context = {
         'title': title,
         'links_menu': links_menu,
