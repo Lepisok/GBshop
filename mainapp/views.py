@@ -15,4 +15,3 @@ def products(request):
         'links_menu': links_menu,
     }
     return render(request, 'mainapp/products.html', context=context)
-
