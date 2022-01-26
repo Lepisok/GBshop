@@ -68,6 +68,8 @@ class OrderItemQuerySet(models.QuerySet):
 
 
 class OrderItem(models.Model):
+    objects = OrderItemQuerySet.as_manager()
+
     order = models.ForeignKey(Order, related_name="orderitems", on_delete=models.CASCADE)
 
     product = models.ForeignKey(Product, verbose_name="продукт", on_delete=models.CASCADE)
